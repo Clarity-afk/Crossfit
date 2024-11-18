@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #131619;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button__header {
+  font-family: Heebo;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 26px;
+  border-radius: 30px;
+}
+
+.header {
+  margin: 0 40px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navlist {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__navitem {
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+}
+
+.thispage {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header__nav-link {
+  font-weight: bold;
+}
+
+.nav__end {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .header__navlist {
+    display: none;
+  }
+  .button__header {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

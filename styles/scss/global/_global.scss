@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@700&display=swap');
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+$color-black: #000000;
+$color-gray: #131619;
+$color-lightgray: #C4C4C4;
+
+body{
+    font-family: "Heebo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: $color-gray;
+
+    color: white;
+}
+

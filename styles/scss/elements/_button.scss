@@ -1,0 +1,14 @@
+.button{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button__header{
+    font-family: Heebo;
+    font-size: 12px;
+    font-weight: 700;   
+
+    padding: 7px 26px;
+    border-radius: 30px;
+}
