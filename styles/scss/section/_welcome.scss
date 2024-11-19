@@ -1,13 +1,14 @@
 .welcome {
     margin: 0 20px;
+    height: calc(100vh - 60px);
 }
 .welcome__wrap {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: baseline;
-    
-    padding-top: 370px;
+
+    padding-top: 200px;
 }
 
 .welcome__img {
@@ -28,6 +29,5 @@
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-
     gap: 30px;
 }
