@@ -1,44 +1,62 @@
 .button{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer; 
-    background-color: #000;
-    
-
-
-    border: 1px solid #fff;
-
-    border-radius: 30px;
-}
-
-.button__header{
-    font-family: "Heebo", sans-serif;
-    font-size: 12px;
-    font-weight: 700;   
-
-    padding: 7px 26px;
-    border-radius: 30px;
-}
-
-.button__wrap{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-}
+    padding-inline: 26px;
+    height: 38px;
 
-.button__text{
-    text-transform: uppercase;
-    padding: 15px 30px;
-    color: #fff; 
-    font-family: "Heebo", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 1.3px;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    background-color: $color-light;
+    border: none;
+    border-radius: $border-radius;
+
+    white-space: nowrap;
 }
 
-.button__img{
-    border: 1px solid #fff;
-    border-radius: 27px;
-    padding: 10px;
-    margin-right: -7px;
+.button:hover{
+    background-color: $color-light-gray;
 }
+
+.header-burger-button{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    row-gap: 4px;
+    width: 40px;
+    height: 40px;
+
+    padding-left: 8px;
+    background-color: transparent;
+    border: $border;
+    border-radius: $border-radius;
+
+    color: $color-light;
+}
+
+.header-burger-button-line:hover{
+    color: $color-light-gray;
+    border-color: currentColor;
+}
+
+.header-burger-button-line{
+    display: flex;
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 1px;
+    background-color: currentColor;
+
+    box-shadow: 16px 0px 0px currentColor;
+}
+
+@media (max-width:767px) {
+    .button{
+        padding-inline: 18px;
+    }
+}
+

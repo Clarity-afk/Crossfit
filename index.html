@@ -3,56 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crossfit</title>
-    <link rel="stylesheet" href="styles/css/style.css">
+    <title>CrossFit</title>
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/normalize.css">
 </head>
 <body>
     <header class="header">
-            <nav class="header__nav">
-                <img src="./images/icons/headerlogo.png" alt="logo" class="header__logo">
-                <ul class="header__navlist">
-                    <a href="#" class="header__navitem"><li class="header__nav-link thispage">HOME <img src="images/icons/pseudo.png" alt="dot"></li></a>
-                    <a href="#" class="header__navitem"><li class="header__nav-link">PAGES</li></a>
-                    <a href="#" class="header__navitem"><li class="header__nav-link">PORTFOLIO</li></a>
-                    <a href="#" class="header__navitem"><li class="header__nav-link">BLOG</li></a>
-                    <a href="#" class="header__navitem"><li class="header__nav-link">SHOP</li></a>
-                </ul>
-                <div class="nav__end">
-                    <button class="button button__header">BOOK NOW</button>
-                    <img src="images/icons/opener.png" alt="opener" class="header__opener">
-                </div>
-            </nav>
+        <a href="/" class="header-logo">
+            <img src="./images/icons/headerlogo.png" loading="lazy" width="135px" height="25px" alt="logo" class="header-logo-img">
+        </a>
+
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link is-current">Home</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Pages</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Portfolio</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Blog</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Shop</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="header-book-button button" type="button">Book now</button>
+            <button class="header-burger-button button" type="button">
+                <span class="header-burger-button-line"></span>
+                <span class="header-burger-button-line"></span>
+                <span class="header-burger-button-line"></span>
+                    
+                
+            </button>
+        </div>
     </header>
-
-    <section class="welcome">
-        <div class="welcome__wrap">
-            <div class="welcome__subwrap">
-                <img src="images/icons/welcomeimg.png" alt="" class="welcome__img">
-                <span class="welcome__subtitle">NEW EVENT <br> COMING UP / JUNE 7 - 13</span>
-            </div>
-            <h1 class="welcome__title">Crossfit</h1>
-        </div>
-    </section>
-
-    <section class="agitation">
-        <div class="agitation__wrap">
-            <div class="agitation__text-wrap">
-                <div class="agitation__text-behind">
-                    <span class="agitation__span-behind">strong</span>
-                </div>
-                <div class="agitation__text-front">
-                    <h2 class="agitation__title">Be you, just stronger! Power is in you</h2>
-                    <p class="agitation__subtitle">Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota.</p>
-                    <button class="button">
-                        <div class="button__wrap"><span class="button__text">view more</span> <img src="images/icons/btnarrow.svg" alt="btnimg" class="button__img"></div>
-                    </button>
-                </div>
-            </div>
-
-            <div class="agitation__img-wrap">
-                <img src="./images/agitation.jpeg" alt="" class="agitation__img">
-            </div>
-        </div>
-    </section>
 </body>
 </html>
