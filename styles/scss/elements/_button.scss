@@ -9,6 +9,7 @@
     line-height: 2;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    text-decoration: none;
 
     background-color: $color-light;
     border: none;
@@ -24,16 +25,15 @@
 .header-burger-button{
     display: inline-flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
     row-gap: 4px;
     width: 40px;
-    height: 40px;
+    aspect-ratio: 1;
 
     padding-left: 8px;
     background-color: transparent;
     border: $border;
-    border-radius: $border-radius;
+    border-radius: 50%;
 
     color: $color-light;
 }
@@ -52,6 +52,60 @@
     background-color: currentColor;
 
     box-shadow: 16px 0px 0px currentColor;
+}
+
+.banner-pagination-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+}
+
+.banner-pagination-button::after{
+    content: '';
+    width: 10px;
+    aspect-ratio: 1;
+    border: $border;
+    border-radius: 50%;
+    transition: $transition-duration;
+}
+
+.banner-pagination-button.is-current::after{
+    background-color: $color-light;
+}
+
+.banner-pagination-button:not(.is-current):hover::after{
+    border-color: $color-light-gray;
+}
+
+.button.transparent{
+    position: relative;
+    height: $input-height;
+    padding-left: 31px;
+    padding-right: 80px;
+    background-color: transparent;
+    border: $border;
+}
+
+.button.transparent::after{
+    content: "";
+    height: 100%;
+    aspect-ratio: 1;
+
+    background: url(/images/icons/arrow-t-r.svg) center/70% no-repeat;
+    border: $border;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 0;
+
+}
+
+.button.transparent:hover{
+    color: $color-dark;
+    background-color: $color-light-gray;
 }
 
 @media (max-width:767px) {
